@@ -185,7 +185,7 @@ async function getSongs(folder) {
 
 
 const playMusic = (track, index) => {
-  currentsong.src = `http://127.0.0.1:3000/web%20development%20sigma%20series/Spotify%20Clone/${currfolder}/` + track;
+  currentsong.src = `https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${currfolder}/` + track;
   currentSongIndex = index;
   updateMainTitle(track);
   currentsong.play().then(() => {
@@ -217,7 +217,7 @@ async function main() {
   console.log('Cleaned song URLs:', songs);
 
   async function displayAlbums() {
-    let a = await fetch("http://127.0.0.1:3000/web%20development%20sigma%20series/Spotify%20Clone/songs/");
+    let a = await fetch("https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -240,7 +240,7 @@ async function main() {
         console.log(folder);
 
         // Get the metadata of the folder
-        let a = await fetch(`http://127.0.0.1:3000/web%20development%20sigma%20series/Spotify%20Clone/songs/${folder}/info.json`);
+        let a = await fetch(`https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${folder}/info.json`);
         let response = await a.json();
 
         console.log(response);
@@ -254,7 +254,7 @@ async function main() {
                             <polygon points="28,22 50,36 28,50" fill="#000" />
                         </svg>
 
-                        <img src="http://127.0.0.1:3000/web%20development%20sigma%20series/Spotify%20Clone/songs/${folder}/cover.jpg" alt="">
+                        <img src="https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${folder}/cover.jpg" alt="">
                         <h3>${response.Title}</h3>
                         <p>${response.Description}</p>
                     </div>
@@ -473,7 +473,6 @@ document.querySelector(".volume").addEventListener("click", (e) => {
 
 }
 main();
-
 
 
 
