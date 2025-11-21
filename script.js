@@ -95,7 +95,7 @@ async function getSongs(folder) {
 
   currfolder = folder;
   // same origin, same port as your page
-  const res = await fetch(`https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${folder}`);     // <-- NOT http://127.0.0.1:60047/... etc.
+  const res = await fetch(`/songs/${folder}`);     // <-- NOT http://127.0.0.1:60047/... etc.
   const html = await res.text();
 
   const div = document.createElement('div');
@@ -185,7 +185,7 @@ async function getSongs(folder) {
 
 
 const playMusic = (track, index) => {
-  currentsong.src = `https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${currfolder}/` + track;
+  currentsong.src = `/songs/${currfolder}/` + track;
   currentSongIndex = index;
   updateMainTitle(track);
   currentsong.play().then(() => {
@@ -217,7 +217,7 @@ async function main() {
   console.log('Cleaned song URLs:', songs);
 
   async function displayAlbums() {
-    let a = await fetch("https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/");
+    let a = await fetch("/songs/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -240,7 +240,7 @@ async function main() {
         console.log(folder);
 
         // Get the metadata of the folder
-        let a = await fetch(`https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${folder}/info.json`);
+        let a = await fetch(`/songs/${folder}/info.json`);
         let response = await a.json();
 
         console.log(response);
@@ -254,7 +254,7 @@ async function main() {
                             <polygon points="28,22 50,36 28,50" fill="#000" />
                         </svg>
 
-                        <img src="https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${folder}/cover.jpg" alt="">
+                        <img src="/songs/${folder}/cover.jpg" alt="">
                         <h3>${response.Title}</h3>
                         <p>${response.Description}</p>
                     </div>
@@ -473,6 +473,7 @@ document.querySelector(".volume").addEventListener("click", (e) => {
 
 }
 main();
+
 
 
 
