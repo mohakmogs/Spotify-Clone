@@ -1,0 +1,67 @@
+.border{
+    /* border: 2px solid red; */
+    /* margin: 4px; */
+    padding: 5px;
+    border-radius: 5px ;
+
+}
+.bordr{
+  border: 2px solid red;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.margin{
+    margin: 5px;
+}
+:root{
+  --sb-track: #222;          /* track background */
+  --sb-thumb: #3a3a3a;       /* thumb base */
+  --sb-thumb-hover: #4a4a4a; /* thumb on hover */
+  --sb-thumb-active: #5a5a5a;
+  --sb-border: #121212;      /* creates a gap around the thumb */
+}
+
+/* Firefox */
+html, body {
+  scrollbar-color: var(--sb-thumb) var(--sb-track); /* thumb track */
+  scrollbar-width: thin; /* auto | thin | none */
+}
+
+/* WebKit (Chrome/Edge/Safari) */
+*::-webkit-scrollbar{
+  width: 10px;              /* vertical */
+  height: 10px;             /* horizontal */
+}
+*::-webkit-scrollbar-track{
+  background: var(--sb-track);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg,#1DB954 0%, #129a3d 100%); /* Spotify-ish */
+  border-radius: 999px;
+  border: 2px solid var(--sb-border); /* makes thumb look “floating” */
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.05),
+    0 2px 6px rgba(0,0,0,.35);          /* soft 3D feel */
+}
+*::-webkit-scrollbar-thumb:hover{  background: linear-gradient(180deg,#21cf62,#16a64a); }
+*::-webkit-scrollbar-thumb:active{ background: linear-gradient(180deg,#0f7a33,#0c6a2b); }
+*::-webkit-scrollbar-corner{ background: var(--sb-track); }
+.bg-red{
+    background-color: red;
+} 
+
+

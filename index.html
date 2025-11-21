@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class=" container flex" id="1">
+
+        <div class="left border ">
+            <div class="home bg-black margin border">
+                <div class="logo"><img class="img-invert margin" src="img2/logo.svg" alt="logo"></div>
+                <div class="close"><img class="img-invert" src="img2/close.svg" alt="close"></div>
+                <ul>
+
+                    <li><img class="img-invert" src="img2/home.svg" alt="home">Home</li>
+                    <li><img class="img-invert" src="img2/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-black margin border">
+                <div class="librarylogo"><img class="img-invert" src="img2/playlist.svg" alt="playlist"> Your Library
+                </div>
+                <div class="lpconatiner">
+
+                    <!-- <div class="localplaylist flex ">
+                        <span class="songimg  flex justify-center"><img class="img-invert" style="width: 20px;"
+                            src="music-note-03-stroke-rounded.svg" alt=""></span>
+                            <span class="songinfo  ">
+                                <div class="songname">my song name is padmaru</div>
+                                <div class="songartist">*gymboy</div>
+                            </span>
+                            <span>
+                                <div class="playsvg   flex justify-center "><button id="playFirst-lib" class="btn play" aria-label="Play">
+                                    <svg viewBox="0 0 24 24">
+                                        <polygon points="8,5 20,12 8,19"></polygon>
+                                    </svg>
+                                </button> 
+                            </div>
+                            <div class="happy ">Play Now</div>
+                        </span>
+                        
+                    </div>
+                    <div class="localplaylist flex ">
+                        <span class="songimg  flex justify-center"><img class="img-invert" style="width: 20px;"
+                            src="music-note-03-stroke-rounded.svg" alt=""></span>
+                            <span class="songinfo  ">
+                                <div class="songname">my song name is padmaru</div>
+                                <div class="songartist">*gymboy</div>
+                            </span>
+                            <span>
+                                <div class="playsvg   flex justify-center "><button id="playFirst-lib" class="btn play" aria-label="Play">
+                                    <svg viewBox="0 0 24 24">
+                                        <polygon points="8,5 20,12 8,19"></polygon>
+                                    </svg>
+                                </button> 
+                            </div>
+                            <div class="happy ">Play Now</div>
+                        </span>
+                        
+                    </div> -->
+
+                </div>
+                <footer>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a>
+                </footer>
+
+
+            </div>
+        </div>
+        <div class="right border bg-black">
+            <div class="header">
+
+                <div class="nav ">
+                    <div class="hamburgerContainer flex justify-center align-center">
+
+                        <img width="40" class="img-invert hamburger" src="img2/hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlists">
+                <h1>Spotify Playlists</h1>
+                <div class="card-container">
+                    <!-- Cards will be injected here by script.js -->
+                    <!-- <div data-folder="old" class="cards">
+                        <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="36" cy="36" r="36" fill="#1DB954" />
+                            <polygon points="28,22 50,36 28,50" fill="#000" />
+                        </svg>
+
+                        <img src="https://i.scdn.co/image/ab67616d00001e02cee84ca4c43376988220a79f" alt="">
+                        <h3>Zxgl Funk</h3>
+                        <p>Djgutx</p>
+                    </div>
+                    <div data-folder="ls" class="cards">
+                        <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="36" cy="36" r="36" fill="#1DB954" />
+                            <polygon points="28,22 50,36 28,50" fill="#000" />
+                        </svg>
+
+                        <img src="https://i.scdn.co/image/ab67616d00001e02cee84ca4c43376988220a79f" alt="">
+                        <h3>Zxgl Funk</h3>
+                        <p>yo yo</p>
+                    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <footer class="player">
+                <!-- LEFT: artwork + meta -->
+                <div class="player__left">
+                    <img class="cover" src="img2/disc1.png" alt="cover">
+                    <div class="meta">
+                        <div class="title">Choose a song</div>
+                        <!-- <button class="artist">Djgutx</button> -->
+                    </div>
+
+                </div>
+
+                <!-- CENTER: controls + seek -->
+                <div class="player__center">
+                    <div class="controls">
+
+                        <button id="previous" class="btn icon" aria-label="Previous">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 5h2v14H6zM20 6v12L9 12 20 6z" />
+                            </svg>
+                        </button>
+
+                        <button id="playFirst" class="btn play" aria-label="Play">
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="8,5 20,12 8,19" />
+                            </svg>
+                        </button>
+
+                        <button id="next" class="btn icon" aria-label="Next">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M16 5h2v14h-2zM4 6v12l11-6L4 6z" />
+                            </svg>
+                        </button>
+
+
+                    </div>
+
+                    <div class="seek">
+                        <span class="time time--current">0:00</span>
+                        <div class="bar" role="slider" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100"
+                            tabindex="0">
+                            <div class="fill" style="width: 28%;"></div>
+                            <div class="thumb"></div>
+                        </div>
+                        <span class="time time--duration">3:25</span>
+                    </div>
+                </div>
+
+                <!-- RIGHT: misc + volume -->
+                <div class="player__right">
+
+
+                    <div class="vol">
+                        <button class="btn icon" aria-label="Volume">
+                            <!-- <svg  class="volume " xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M14 14.814V9.186c0-3.145 0-4.717-.925-5.109c-.926-.391-2.015.72-4.193 2.945c-1.128 1.152-1.771 1.407-3.376 1.407c-1.403 0-2.105 0-2.61.344C1.85 9.487 2.01 10.882 2.01 12s-.159 2.513.888 3.227c.504.344 1.206.344 2.609.344c1.605 0 2.248.255 3.376 1.407c2.178 2.224 3.267 3.336 4.193 2.945c.925-.392.925-1.964.925-5.11M17 9c.625.82 1 1.863 1 3s-.375 2.18-1 3m3-8c1.25 1.366 2 3.106 2 5s-.75 3.634-2 5"
+                                    color="currentColor" />
+                            </svg> -->
+                            <img class="volume img-invert" src="img2/volume.svg" alt="">
+                        </button>
+
+                        <div class="range">
+                            <input type="range" min="0" max="100" value="80" />
+                        </div>
+
+                    </div>
+                </div>
+
+               
+        </div>
+        </footer>
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
