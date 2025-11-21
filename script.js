@@ -95,11 +95,12 @@ async function getSongs(folder) {
 
   currfolder = folder;
   // same origin, same port as your page
-  const res = await fetch(`http://127.0.0.1:3000/web%20development%20sigma%20series/Spotify%20Clone/${folder}`);     // <-- NOT http://127.0.0.1:60047/... etc.
+  const res = await fetch(`https://github.com/mohakmogs/Spotify-Clone/tree/main/songs/${folder}`);     // <-- NOT http://127.0.0.1:60047/... etc.
   const html = await res.text();
 
   const div = document.createElement('div');
   div.innerHTML = html;
+  console.log(div);
 
   // Grab anchors from the server directory listing
   const anchors = Array.from(div.querySelectorAll('a'));
@@ -472,6 +473,7 @@ document.querySelector(".volume").addEventListener("click", (e) => {
 
 }
 main();
+
 
 
 
